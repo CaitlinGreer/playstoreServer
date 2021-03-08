@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app",
-    "dev": "nondemon app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server",
+    "dev": "nondemon server",
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,12 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.7"
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.3",
+    "mocha": "^8.3.1",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
   }
 }
